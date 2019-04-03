@@ -14,7 +14,7 @@ end
 keyboard_gui
 uiwait(gcf)
 try
-    load ('C:\Users\User\Downloads\Matlab_testing\Final.mat');
+    load ('Final.mat');
     UserInput=Final;
 catch
     UserInput='';
