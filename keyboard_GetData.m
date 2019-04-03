@@ -257,14 +257,17 @@ set(S.pb(28),'callback',{@(~,~)SubmitLetters})  % Set the callback for pushbutto
         % Callback for the pushbutton.
         if strcmp(get(S.pb3(3),'string'),'CAPS')
             set(S.pb3(3),'string','lower','backgroundcolor',colKey,'ForegroundColor',colFront);
+            for jj=1:26
+                set(S.pb(jj),'string',lower(char(96+jj)));
+            end
             %             set(S.ed,'string',upper(get(S.ed,'string')));
         else
             set(S.pb3(3),'string','CAPS','backgroundcolor',colHigh,'ForegroundColor',colFront2);
+            for jj=1:26
+                set(S.pb(jj),'string',upper(char(96+jj)));
+            end
             %             set(S.ed,'string',lower(get(S.ed,'string')));
         end
         drawnow;
     end
-
-
-end
 
