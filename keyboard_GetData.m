@@ -6,7 +6,7 @@ function UserInput=keyboard_GetData()
 % Who did: Swapan Masanta - 28-Mar-2019 11:27:36
 
 % Inspired By Sean de Wolski
-% https://in.mathworks.com/matlabcentral/answers/72411-how-can-i-code-an-on-screen-keyboard-within-a-gui-to-be-able-to-update-an-edit-text-box-similar-to
+% https://in.mathworks.com/matlabcentral/answers/8195-on-screen-keyboard?s_tid=answers_rc1-2_p2_MLT
 
 try delete Final.mat
 catch
